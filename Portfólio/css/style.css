@@ -1,9 +1,14 @@
 .minha-classe{
-    border: 2px solid black;
+    
 }
 
 body{
+    min-width: 100vw;
+    min-height: 100vh;
     background:url("../imagem/imagem\ para\ site.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
     color: white;
 }
 
