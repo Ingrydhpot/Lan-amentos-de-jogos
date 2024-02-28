@@ -1,6 +1,4 @@
-.minha-classe{
-    
-}
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
     min-width: 100vw;
@@ -10,9 +8,28 @@ body{
     background-size: cover;
     background-position: 50%;
     color: white;
+    font-family: "Archivo", sans-serif;
 }
 
 
 .center{
     text-align: center;
 }
+
+
+.separator-section {
+    margin-top: 150px;
+    margin-left: 25px;
+}
+
+
+.separador-games{
+    margin-top: 250px;
+    margin-left: 260px;
+
+}
+
+.separador-games span {
+    margin-right: 150px;
+}
+
