@@ -7,7 +7,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: "Archivo", sans-serif;
 }
 
@@ -25,11 +25,18 @@ body{
 
 .separador-games{
     margin-top: 250px;
-    margin-left: 260px;
+    margin-left: 400px;
 
 }
 
 .separador-games span {
     margin-right: 150px;
+
 }
 
+
+.lista-jogos{
+    margin-top: 100px;
+    margin-left: 600px;
+   
+}
