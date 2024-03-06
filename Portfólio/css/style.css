@@ -51,6 +51,11 @@ body{
     font-size: x-large;
 }
 
+.lista-jogos a {
+    text-decoration: none;
+    color: white;
+}
+
 .nome-grupo{
     margin-top:40px;
     margin-left: 10px;
