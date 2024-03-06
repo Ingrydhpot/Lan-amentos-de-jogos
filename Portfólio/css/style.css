@@ -1,5 +1,15 @@
 @import url('<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">');
+:root{
+    --color-destak:#ff00cc
+    -- color-black:#1B1B1B;
+    --color-white:#ECECEC;
+    --font-title:"Archivo", sans-serif;
+    --font-body:"Archivo", sans-serif;
+}
 
+header{
+    height: 100vh;
+}
 body{
     min-width: 100vw;
     min-height: 100vh;
@@ -60,4 +70,13 @@ body{
     margin-top: 10px;
     margin-left: 5px;
     font-size:7px;
+}
+#secao-apresentacao img{
+    border-radius: 50%;
+    
+}
+#texto-apresentacao{
+    color:var(--color-black);
+
+
 }
