@@ -11,14 +11,16 @@ header{
     height: 100vh;
 }
 body{
-    min-width: 100vw;
-    min-height: 100vh;
+    content: "";
     background:url("../imagem/imagem\ para\ site.png");
-    background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
-    color: rgb(255, 255, 255);
-    font-family: "Archivo", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: -10;
+
+   
 }
 
 
@@ -79,4 +81,30 @@ body{
     color:var(--color-black);
 
 
+}
+#secao-apresentacao {
+    display: flex;
+    align-items: center;
+    padding: 4rem; 
+    /* 1rem = 16px */
+}
+
+#secao-apresentacao img{
+    border-radius: 50%;
+    width:  400px; /* Largura dos itens */
+    height: 400px; /* Altura dos itens */
+}
+
+#texto-apresentacao {
+    color: var(--color-black);
+}
+
+#texto-apresentacao h2 {
+    font-size: 2.5rem;
+    font-family: var(--font-title);
+}
+
+#texto-apresentacao p {
+    font-size: 1.5rem;
+    font-family: var(--font-body);
 }
