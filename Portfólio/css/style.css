@@ -22,7 +22,13 @@ body{
 
    
 }
-
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #E9E9E9;
+}
 
 .center{
     text-align: center;
@@ -34,44 +40,13 @@ body{
 .separator-explicação {
     margin-top: 145px;
     margin: left 10px;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 
-.separador-games{
-    margin-top: 250px;
-    margin-left: 400px;
 
-}
-
-.separador-games span {
-    margin-right: 150px;
-
-}
-
-
-.lista-jogos{
-    margin-top: 100px;
-    margin-left: 600px;
-    list-style: none;
-
-}
-.lista-jogos li{
-    list-style: none;
-    color:white;
-    text-decoration: none;
-    font-size: x-large;
-}
-
-.lista-jogos a {
-    text-decoration: none;
-    color: white;
-}
-
-.nome-grupo{
-    margin-top: 10px;
-    margin-left: 5px;
-    font-size:7px;
+#secao-apresentacao { 
+    margin-top: 600px;
 }
 #secao-apresentacao img{
     border-radius: 50%;
@@ -79,7 +54,7 @@ body{
 }
 #texto-apresentacao{
     color:var(--color-black);
-
+    
 
 }
 #secao-apresentacao {
@@ -87,6 +62,7 @@ body{
     align-items: center;
     padding: 4rem; 
     /* 1rem = 16px */
+    
 }
 
 #secao-apresentacao img{
@@ -94,6 +70,9 @@ body{
     width:  400px; /* Largura dos itens */
     height: 400px; /* Altura dos itens */
 }
+
+
+
 
 #texto-apresentacao {
     color: var(--color-black);
@@ -108,3 +87,113 @@ body{
     font-size: 1.5rem;
     font-family: var(--font-body);
 }
+header p {
+    color: var(--font-color);
+    text-shadow: 
+    -1px -1px 0px black, 
+    -1px 1px 0px black,                    
+    1px -1px 0px black,                  
+    1px 0px 0px black;
+} 
+
+header h1 {
+    font-size: 60px;
+    text-shadow: black 5px 5px 5px;
+}
+
+header h2 {
+    font-size: 40px;
+    font-style: normal;
+    font-family: var(--font-body);
+    text-shadow: black 5px 5px 5px;
+}
+
+section h2 {
+    font-size: 40px;
+}
+
+#texto-apresentacao {
+    font-size: 2.5rem;
+}
+
+#secao-projetos {
+    background-color: #272935;
+    height: 110vh;
+
+}
+
+
+.card {
+    position: relative; /* Essencial para posicionar o texto sobre a imagem */
+    max-width: 300px;
+    height: 400px;
+    overflow: hidden; /* Mantém o conteúdo dentro dos limites do cartão */
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 100%;
+    transition: opacity ; /* Corrige a transição da opacidade */
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-text {
+    position:absolute;
+    top: 0;
+    width: 100%; /* Garante que o texto cubra a largura da imagem */
+    height: 100%; /* Garante que o texto cubra a altura da imagem */
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FFF; /* Ajuste a cor do texto conforme necessário */
+    opacity: 0;
+    transition: opacity .5s;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para melhor leitura do texto */
+}
+
+.card:hover .card-text {
+    opacity: 1;
+}
+
+.card:hover .image-wrapper {
+    opacity: .2;
+}
+
+#secao-projetos ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+}
+
+#secao-projetos li {
+    margin: 20px; /* Ajusta o espaçamento entre os itens da lista, se necessário */
+}
+
+.cards-container {
+    display: flex; /* Exibe os cards em linha */
+  }
+  #secao-projeto{
+    .card-container {
+        display: flex; /* Define o contêiner como um flex container */
+      }
+      
+      .card {
+        flex: 1; /* Distribui o espaço igualmente entre os cartões */
+        margin: 0 10px; /* Adiciona margem entre os cartões */
+        padding: 20px;
+        border: 1px solid #ccc; /* Border pode ser removida */
+        background-color: #f0f0f0; /* Cor de fundo do cartão */
+      }
+      
+      .card:hover {
+        opacity: 0.7; /* Define a opacidade ao passar o mouse */
+      }
+  }
+  
