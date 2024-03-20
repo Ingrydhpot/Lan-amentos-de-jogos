@@ -46,6 +46,9 @@ footer {
 
 
 #secao-apresentacao { 
+    background-color: white;
+}
+#secao-apresentacao { 
     margin-top: 600px;
 }
 #secao-apresentacao img{
